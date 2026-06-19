@@ -244,3 +244,32 @@ export { DATASET_EXPORT_SCHEMA_VERSION } from "./types/datasetExport";
 export type { DraftDatasetExport } from "./types/datasetExport";
 export { ExportDatasetButton } from "./components/ExportDatasetButton";
 export type { ExportDatasetButtonProps } from "./components/ExportDatasetButton";
+
+// Demo attachments (issue #14): types, fixtures, helpers, component
+export type {
+  AttachmentCategory,
+  DemoAttachmentRecord,
+  AttachmentDraft,
+  AttachmentFieldError,
+  AttachmentValidationResult,
+} from "./types/attachment";
+export {
+  demoAttachmentRecords,
+  blankAttachmentDraft,
+} from "./fixtures/attachmentFixtures";
+export {
+  isSafeSenderAddress,
+  validateAttachmentDraft,
+  validateAttachment,
+  inferCategory,
+  formatBytes,
+  categoryLabel,
+  isValidAttachmentId,
+  applyDraftToRecord,
+  formatAttachmentSummary,
+  sortAttachmentsByDate,
+  filterAttachments,
+} from "./helpers/attachmentHelpers";
+export { AttachmentEditor } from "./components/AttachmentEditor";
+export type { AttachmentEditorProps } from "./components/AttachmentEditor";
+
